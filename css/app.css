@@ -1,0 +1,100 @@
+/* Creado por Abel Acosta */
+:root {
+  --blanco: hsl(0, 0%, 95%);
+  --oscuro: #212121;
+  --cyanOscuro: hsl(185, 75%, 39%);
+  --azulDesaturado: hsl(229, 23%, 23%);
+  --grayishAzul: hsl(227, 10%, 46%);
+  --gris: hsl(0, 0%, 59%);
+  --fuenteKumbh: "Kumbh Sans", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--fuenteKumbh);
+  background-image: url(../images/bg-pattern-top.svg);
+  background-position: center;
+  background-color: var(--cyanOscuro);
+}
+.contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-head {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 150px;
+}
+.card-body {
+  background-color: #fff;
+  padding: 10px;
+  color: var(--azulDesaturado);
+  text-align: center;
+}
+
+.titulo {
+  margin-top: -60px;
+  text-align: center;
+}
+
+.titulo img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.titulo .nombre {
+  margin-top: 20px;
+}
+.titulo .nombre,
+.caracteristicas .numero {
+  font-weight: 700;
+}
+.titulo .nombre span,
+.titulo .ciudad,
+.caracteristicas .descripcion {
+  font-weight: 400;
+  color: var(--gris);
+}
+.titulo .ciudad {
+  padding: 20px;
+  font-size: 0.9em;
+}
+hr {
+  background-color: var(--gris);
+}
+.caracteristicas {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--gris);
+}
+.caracteristicas .numero {
+  font-size: 0.9em;
+}
+.caracteristicas .descripcion {
+  font-size: 0.8em;
+}
